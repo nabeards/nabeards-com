@@ -1,0 +1,62 @@
+[
+    {
+        "id": 101,
+        "company": "AethLabs",
+        "link": "aethlabs.com",
+        "title": "Software Engineer, Freelance",
+        "date": "Early 2013 - Winter 2016",
+        "description": "Develop software for a next-generation environmental monitoring device.",
+        "accomplishments": [
+            "Engineered desktop app using Qt C++ for low-level USB communications and JavaScript/HTML for UI that downloads data from and modifies settings for the device",
+            "Prototyped a Node.js backend system for data storage and arithmetic operations",
+            "Set up a Drupal REST API for user-facing management system for multiple devices that connects to the Node.js backend for data and settings access",
+            "Collaboratively developed embedded C firmware for PIC32 hardware, creating device state machine and driver access routines"
+        ]
+    },
+    {
+        "id": 102,
+        "company": "Sommly",
+        "link": "sommly.io",
+        "title": "Software Engineer, Cofounder",
+        "date": "Fall 2013 - Present",
+        "description": "Engineer app to pair restaurant meals with proper wines using Master Sommelier expertise.",
+        "accomplishments": [
+            "Created Node.js API for front-end mobile app to access restaurant, menu, and shopping information",
+            "Integrated Foursquare API to access restaurant details and menus",
+            "Connected Google Docs to allow finer-detailed menu input",
+            "Incorporated the Shopify API to allow purchasing of wine and food directly from the mobile app",
+            "Constructed an AWS Beanstalk with Docker images to run the API as well as use Cloudfront for CDN delivery of media assets"
+        ]
+    },
+    {
+        "id": 103,
+        "company": "Tricycle Studios",
+        "link": "tricyclestudios.com",
+        "title": "Director of Technology",
+        "date": "Spring 2010 - Fall 2012",
+        "description": "Create digital sales and marketing tools to empower sales people in the medical device field.",
+        "accomplishments": [
+            "Founded software development division, grew it to over 50% of company revenue in two years",
+            "Created and trained resulting team of 2 project managers, 5 developers and 2 QA engineers",
+            "Sourced and managed 3 outsourced development firms for additional work as needed",
+            "Account manager and technical sales engineer for Fortune 50 and other large customers",
+            "International client teams from Australia, India, UK & Ireland, Germany, Italy, Spain",
+            "Developed software for iOS that client sales teams use for product demonstration and training",
+            "Technologies used include Obj-C, JavaScript, Node.js, Django, Git, AWS infrastructure"
+        ]
+    },
+    {
+        "id": 104,
+        "company": "RedCase, LLC",
+        "title": "Managing Partner",
+        "date": "Spring 2003 - Spring 2010",
+        "description": "Provide Macintosh IT services for businesses and homes throughout Tampa Bay, FL.",
+        "accomplishments": [
+            "Founded company, grew from servicing a handful of residential clients to being the outsourced IT for numerous companies in Tampa Bay that ran Macintosh computers",
+            "Successfully systematized, automated and normalized infrastructure across most clients to minimize custom support needs and ease remote monitoring",
+            "Increased and normalized revenue by initiating managed service contracts with large customers",
+            "Created successful marketing campaigns focused on backup, email and server improvements",
+            "Sold company to Infinity Business Systems and hired by them for continued support management, Spring 2009 - Spring 2010"
+        ]
+    }
+]

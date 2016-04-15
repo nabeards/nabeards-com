@@ -1,0 +1,7 @@
+node_modules
+!custom_node_modules/*/node_modules
+custom_node_modules/*/test/*
+.idea
+*.swp
+.DS_Store
+*.log

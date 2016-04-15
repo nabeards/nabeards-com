@@ -1,0 +1,18 @@
+[
+    {
+        "id": 301,
+        "school": "Worcester Polytechnic Institute",
+        "location": "Worcester, MA",
+        "date": "Fall 1998 - Spring 2002",
+        "degree": "BS Computer Science, Minor MIS",
+        "link": "wpi.edu",
+        "gpa": "GPA 3.5",
+        "curriculum": [
+            "Major Project: Using Eye Movement as a Control Device for Computer Screen Cursors",
+            "Coursework: Computer Networks; Database Systems; OO Analysis & Design; HCI"
+        ],
+        "metaLink": {
+            "Using Eye Movement as a Control Device for Computer Screen Cursors": "http://gordonlibrary.wpi.edu/vwebv/holdingsInfo?bibId=253018"
+        }
+    }
+]

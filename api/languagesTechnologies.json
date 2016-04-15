@@ -1,0 +1,11 @@
+[
+    {
+        "id": 201,
+        "title": "Languages & Technologies",
+        "tech": [
+            "JavaScript; Node.js; MongoDb; SQL; Objective-C; C++; Qt; PIC-C; Git; OS X Server;",
+            "Amazon Web Services (EC2, Beanstalk, S3); Docker; VirtualBox",
+            "Past Experience in Rails, PHP, Perl"
+        ]
+    }
+]
