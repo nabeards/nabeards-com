@@ -55,7 +55,7 @@ var main = 'main',
         alignItems: 'flex-end',
         float: 'left',
         minHeight: '30px',
-        width: '30%'
+        width: '25%'
     },
     styleCenterCol = {
         display: 'flex',
@@ -63,7 +63,7 @@ var main = 'main',
         float: 'left',
         overflow: 'hidden',
         minHeight: '30px',
-        width: '40%',
+        width: '50%',
         justifyContent: 'center',
         textAlign: 'center'
     },
@@ -74,7 +74,7 @@ var main = 'main',
         justifyContent: 'flex-end',
         textAlign: 'right',
         minHeight: '30px',
-        width: '30%'
+        width: '25%'
     };
 
 var ResumeDetail = React.createClass({
@@ -98,13 +98,24 @@ var ResumeDetail = React.createClass({
         var links = this.props.content.metaLink;
         if (links) {
             Object.keys(links).forEach(function (text) {
-                console.log('link', text, links[text]);
                 content = content.replace(text, '<a href="' + links[text] + '" target="_blank">' + text + '</a>');
-                console.log(content);
             });
         }
-        console.log({ __html: content });
         return { __html: content };
+    },
+    addBreakOpportunities: function (t) {
+        let result = '',
+            breakOpp = '\u200b',
+            alphaNumPattern = /\w/ug;
+
+        for (let i = 0; i < t.length; i++) {
+            result = t.charAt(i).match(alphaNumPattern);
+            if (!result) {
+                t = [t.slice(0, i), breakOpp, t.slice(i)].join('');
+                i += breakOpp.length;
+            }
+        }
+        return t;
     },
     parseDetail: function (section, type, style) {
         var content = this.props.content[type],
@@ -121,7 +132,7 @@ var ResumeDetail = React.createClass({
 
         switch (type) {
         case 'email':
-            return <div><a style={style} href={'mailto:' + content}>{content}</a></div>;
+            return <div><a style={style} href={'mailto:' + content}>{this.addBreakOpportunities(content)}</a></div>;
             break;
         case 'phone':
             return <div><a style={style} href={'tel:' + this.cleanPhoneNumber(content)}>{content}</a></div>
