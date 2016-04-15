@@ -106,7 +106,7 @@ var ResumeDetail = React.createClass({
     addBreakOpportunities: function (t) {
         let result = '',
             breakOpp = '\u200b',
-            alphaNumPattern = /\w/ug;
+            alphaNumPattern = /[^\W]/u;  // \u is not supported much yet, but it will be ready here.
 
         for (let i = 0; i < t.length; i++) {
             result = t.charAt(i).match(alphaNumPattern);
@@ -115,6 +115,7 @@ var ResumeDetail = React.createClass({
                 i += breakOpp.length;
             }
         }
+
         return t;
     },
     parseDetail: function (section, type, style) {
